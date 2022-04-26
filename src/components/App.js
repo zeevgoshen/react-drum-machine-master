@@ -8,10 +8,9 @@ import { renderAudioForDrums } from "../audioHelper";
 
 const AppWrapper = styled.div`
   background-color: ${(props) => props.theme.color.mainBackground};
-  height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-content: center;
+  height: 100%;
+  width: 100%;
+   
 `;
 
 class App extends Component {
@@ -61,9 +60,9 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <AppWrapper>
-          <div className="">
+          <div className="main">
             <div className="inputArea">
-              <header className="">
+              <header>
                 <h1>Loop Machine</h1>
               </header>
               <button
